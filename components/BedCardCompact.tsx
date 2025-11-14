@@ -1,6 +1,6 @@
 'use client'
 
-import { Bed } from '@/types/bed'
+import { Bed } from '@/lib/types'
 import { STATE_COLORS } from '@/lib/constants'
 import { useState } from 'react'
 

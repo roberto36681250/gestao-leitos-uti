@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
-import { Bed } from '@/types/bed'
+import { Bed } from '@/lib/types'
 import BoardGridCompact from '@/components/BoardGridCompact'
 import DashboardHeader from '@/components/DashboardHeader'
 

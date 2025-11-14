@@ -1,6 +1,6 @@
 'use client'
 
-import { Bed } from '@/types/bed'
+import { Bed } from '@/lib/types'
 import BedCardCompact from './BedCardCompact'
 
 interface BoardGridCompactProps {

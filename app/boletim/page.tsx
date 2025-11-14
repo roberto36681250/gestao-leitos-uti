@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
-import { Bed } from '@/types/bed'
+import { Bed } from '@/lib/types'
 import Boletim from '@/components/Boletim'
 
 export default function BoletimPage() {
