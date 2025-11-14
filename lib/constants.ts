@@ -1,8 +1,26 @@
-// Metas e limites de WIP e Aging
-export const HIGIENE_WIP = 2; // Meta de leitos em higienização
-export const META_ALTA_MIN = 90; // Meta em minutos para Alta Sinalizada
-export const META_HIGIENE_MIN = 45; // Meta em minutos para Higienização
+export const BED_STATES = {
+  DISPONIVEL: 'Disponível',
+  RESERVADO: 'Reservado',
+  OCUPADO: 'Ocupado',
+  HIGIENE: 'Higiene',
+  MANUTENCAO: 'Manutenção',
+  BLOQUEADO: 'Bloqueado',
+  PREVISAO_ALTA: 'Previsão de Alta',
+  ALTA_DADA: 'Alta Dada'
+} as const
 
-// Estados críticos que precisam de aging
-export const CRITICAL_STATES: readonly string[] = ['Alta Sinalizada', 'Higienização'];
+export type BedState = typeof BED_STATES[keyof typeof BED_STATES]
+
+// Cores Neon para os estados
+export const STATE_COLORS = {
+  [BED_STATES.DISPONIVEL]: '#00ff88',      // Verde Neon
+  [BED_STATES.RESERVADO]: '#ffff00',       // Amarelo Fluorescente
+  [BED_STATES.OCUPADO]: '#ff3366',         // Vermelho Neon
+  [BED_STATES.HIGIENE]: '#00ffff',         // Ciano
+  [BED_STATES.MANUTENCAO]: '#ff0099',      // Rosa Neon
+  [BED_STATES.BLOQUEADO]: '#bb00ff',       // Roxo Neon
+  [BED_STATES.PREVISAO_ALTA]: '#ffff00',   // Amarelo Fluorescente
+  [BED_STATES.ALTA_DADA]: '#00ff88'        // Verde Neon
+} as const
+
 
